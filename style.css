@@ -1,0 +1,147 @@
+/*Organizando o site*/
+body{
+    background-color: rgb(14,14,14);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+/**/
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/*Listando as tarefas*/
+.content-iten{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+
+/*Configuração geral do input e o botão*/
+#input-tarefa,#btn-tarefa{
+
+    border: none;
+    font-size: 1.3rem;
+    outline: none;
+    padding: 0.6rem;
+}
+
+/*Configuração do input*/
+#input-tarefa{
+    width: 18rem;
+    border-radius: 1.1rem;
+
+}
+
+/*Configuração do botão adcionar*/
+#btn-tarefa{
+    background-color: rgb(32,32,32);
+    color: #fff;
+    border-radius: 90%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*Mundando a cor do butão quando passa por cima*/
+#btn-tarefa:hover{
+   background-color: rgb(22,22,22);
+}
+
+/*Configurando a lista*/
+#list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+
+}
+
+#list li{
+
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btn-ok{
+    border: none;
+    background-color: rgb(103,195,80);
+    color: #fff;
+    padding: .2rem .4rem;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#list li:hover{
+    background-color: rgb(22,22,22);
+    transition: .5s;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+#btn-ok:hover{
+    background-color: rgb(51,149,26) ;
+}
+
+#btn-delete{
+
+    border: none;
+    background-color: rgb(146,22,17);
+    color: #fff;
+    padding: .2rem .4rem;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#btn-delete:hover{
+
+    background-color: rgb(184,40,35);
+}
+
+#btn-delete,#btn-ok{
+    align-items: center;
+}
+
+#btn-edit{
+
+    border: none;
+    background-color: rgb(0, 28, 105);
+    color: #fff;
+    padding: .2rem .4rem;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+#btn-edit:hover{
+    background-color: rgb(19, 65, 192);
+}
